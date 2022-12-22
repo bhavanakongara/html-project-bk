@@ -1,22 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-.sport-logo {
-  width: 80px;
-  height: 70px;
+body {
+  padding: 0;
+  margin: 0;
 }
-#navItem1 {
-  color: #323f4b;
-  font-family: "Roboto";
+.navbar {
+  position: relative;
+  background: black;
 }
-#navItem2 {
-  color: #323f4b;
-  font-family: "Roboto";
+
+#navlist {
+ list-style: none;
+ display: flex;
+ padding: 0;
+ margin: 0;
+ background: black;
 }
-#navItem3 {
-  color: #323f4b;
-  font-family: "Roboto";
+
+#navlist li {
+flex: auto;
+text-align: center;
+padding: 1.6em;
+font-size: 18px;
+color: white;
 }
-#navItem4 {
+#navlist li:hover {
+  background: green;
+}
+#navItem {
   color: #323f4b;
   font-family: "Roboto";
 }
@@ -28,14 +39,14 @@
 .banner-heading {
   color: rgba(128, 26, 0, 0.989);
   font-family: "Roboto";
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 300;
 }
 .banner-caption {
   color: #32e416;
   font-family: "Roboto";
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 100;
 }
 .custom-button {
   color: white;
@@ -54,5 +65,6 @@
     height: 45px;
     margin-left: 0px;
     border-radius: 8px;
+    margin-top: 20px;
 }
 
