@@ -7,6 +7,12 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
     <!-- <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script> -->
+    <script>
+      const message = "You are Successfully Subscribed!.";
+      function display(){
+        document.getElementById('doThis').innerHTML = message;
+      }
+  </script>
     <style>
       div.relative {
         position: relative;
@@ -21,22 +27,22 @@
     <nav class="navbar">
       <ul id="navlist">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" alt="Img" style="margin-top: 15px;width: 50px;height: 60px;" />
-          <li>Benefits</li>
-          <li>About</li>
-          <li>Case Studies</li>
-          <li>Pricing</li>
-          <li>Contact</li>
-          <button class="custom-login">Login</button>
+          <li><a href="./about.html" target="_blank" class="links">Benefits</a></li>
+          <li><a href="./about.html" target="_blank" class="links">About</a></li>
+          <li><a href="./about.html" target="_blank" class="links">Case Studies</a></li>
+          <li><a href="./about.html" target="_blank" class="links">Pricing</a></li>
+          <li><a href="./about.html" target="_blank" class="links">Contact</a></li>
+          <button class="custom-login" onclick="location.href='http://www.example.com'" type="button">Login</button>
       </ul>
     </nav>
     <div class="banner-section-bg-container d-flex justify-content-center flex-column">
-      <div class="relative">
-        <h1 class="banner-heading mb-3">A new ERA of Sports Technology has begun.</h1>
+      <div class="relative" id="container">
+        <h1 class="banner-heading" style="margin: 0;">A new ERA of Sports Technology has begun.</h1>
         <h3 class="banner-heading">MONEYBALL + AI</h3>
         <p class="banner-caption mb-4">The sports ecosystems first ever ai powered financial and performance nba<br>
         platform on professional athletes Calibrated to the finest detail with pure<br>
         non bias data designed around the modern style of basketball.</p>
-        <button class="custom-button">Subscribe</button>
+        <button onclick="display()" class="custom-button" id="subscribeButton">Subscribe</button><p class="banner-heading" id="doThis"></p>
       </div>
     </div>
   </body>
