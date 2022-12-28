@@ -9,6 +9,13 @@
     <!-- <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script> -->
     <script>
       const message = "You are Successfully Subscribed!.";
+      function displayDetails() {
+        var x = document.getElementById("name").value;
+        var y = document.getElementById("email").value;
+        var z = document.getElementById("browser").value;
+        var w = document.getElementById("message").value;
+        document.getElementById("displayThis").innerHTML = x +"<br>" + y + "<br>" + z + "<br>" + w;
+      }
       function display(){
         document.getElementById('doThis').innerHTML = message;
       }
@@ -35,8 +42,30 @@
           <button class="custom-login" onclick="location.href='http://www.example.com'" type="button">Login</button>
       </ul>
     </nav>
+    
     <div class="banner-section-bg-container d-flex justify-content-center flex-column">
       <div class="relative" id="container">
+      <div class="d-flex justify-content-center flex-column">    
+          <div>
+            <form action="/action_page.php">
+              <input type="text" class="form-elements" id="name" placeholder="Name *"><br><br>
+              <input type="text" class="form-elements" id="email" placeholder="Email *"><br><br>
+              <input list="browsers" class="form-elements" id="browser" placeholder="Choose Service *">
+              <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+              </datalist><br><br>
+              <textarea id="message" class="form-elements" rows="4" cols="50" placeholder="Type here..."></textarea>
+            </form>
+            <button onclick="displayDetails()" class="custom-button">Submit</button>
+          </div>
+          <div>  
+            <p class="banner-caption" id="displayThis"></p>
+          </div>
+        </div>
         <h1 class="banner-heading" style="margin: 0;">A new ERA of Sports Technology has begun.</h1>
         <h3 class="banner-heading">MONEYBALL + AI</h3>
         <p class="banner-caption mb-4">The sports ecosystems first ever ai powered financial and performance nba<br>
